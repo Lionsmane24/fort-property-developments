@@ -18,6 +18,11 @@ _Created: 2026-03-12_
 
 **Requirements:** REQ-001
 
+**Plans:** 1 plan
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold brand docs, Canva design brief, logo exports, tailwind.config.js + fonts.ts
+
 **Deliverables:**
 - Logo Option 1 (chevron mark + FORT wordmark) built in Canva — exported as SVG + PNG
 - Logo Option 2 (clean Cormorant Garamond wordmark) built in Canva — exported as SVG + PNG
@@ -68,7 +73,7 @@ _Created: 2026-03-12_
 **Home Page (`app/page.tsx`):**
 - Hero section: full-bleed image with overlay, H1, subheadline, 2 CTAs
 - Value strip: 3-column Experience / Location / Quality
-- Projects preview: 2–3 cards (placeholder/Coming Soon state)
+- Projects preview: 2–3 project cards (placeholder/Coming Soon state)
 - About teaser: photo + paragraph + Learn More CTA
 - Trust bar: affiliation logos
 - CTA banner: interest capture
