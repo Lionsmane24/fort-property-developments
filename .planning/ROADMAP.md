@@ -12,9 +12,11 @@ _Created: 2026-03-12_
 
 ---
 
-### Phase 1 — Brand Identity
+### Phase 1: Brand Identity
 
 **Goal:** Finalized logo, color palette, and typography system. All brand assets exported and ready for the website build.
+
+**Requirements:** REQ-001
 
 **Deliverables:**
 - Logo Option 1 (chevron mark + FORT wordmark) built in Canva — exported as SVG + PNG
@@ -32,9 +34,11 @@ _Created: 2026-03-12_
 
 ---
 
-### Phase 2 — Project Setup & Shared Components
+### Phase 2: Project Setup and Shared Components
 
 **Goal:** Next.js project initialized with brand system baked in. Navigation, footer, and core UI components built and working.
+
+**Requirements:** REQ-002, REQ-003
 
 **Deliverables:**
 - `npx create-next-app` initialized with App Router + TypeScript + Tailwind
@@ -53,9 +57,11 @@ _Created: 2026-03-12_
 
 ---
 
-### Phase 3 — Page Build
+### Phase 3: Page Build
 
 **Goal:** All 4 pages built with real copy and working interactive elements.
+
+**Requirements:** REQ-004, REQ-005, REQ-006, REQ-007
 
 **Deliverables:**
 
@@ -74,7 +80,7 @@ _Created: 2026-03-12_
 - "Fort Difference" section (why multiplex infill, why this approach)
 - Service area visual
 - Affiliations row
-- CTA → Contact
+- CTA to Contact
 
 **Projects Page (`app/projects/page.tsx`):**
 - Page header
@@ -96,9 +102,11 @@ _Created: 2026-03-12_
 
 ---
 
-### Phase 4 — Polish & Launch
+### Phase 4: Polish and Launch
 
 **Goal:** Site is production-ready: SEO complete, performance optimized, legal pages in place, deployed to Vercel on custom domain.
+
+**Requirements:** REQ-008, REQ-009, REQ-010
 
 **Deliverables:**
 - SEO: `metadata` export on all 4 pages (title, description, OG tags)
@@ -110,36 +118,32 @@ _Created: 2026-03-12_
 - `sitemap.xml` and `robots.txt` generated
 - Favicon: `.ico` + 192px PNG added to `/public/`
 - Google Analytics 4 or Plausible installed and tracking
-- Vercel deployment: `git push` → auto-deploy pipeline working
+- Vercel deployment: `git push` auto-deploy pipeline working
 - Custom domain `www.FortPropertyDevelopments.com` connected in Vercel
 - SSL certificate active (Vercel auto-provisions)
-- Google Business Profile created (post-launch — external action for Dennis)
 - Final pre-launch review: test all forms, test all pages on iPhone + Android
 
 **UAT:**
 - Navigate to https://www.FortPropertyDevelopments.com — site loads over HTTPS
 - Submit contact form on live site — Dennis receives notification email
-- Google search "Fort Property Developments" — site is indexed within 2 weeks
 - Mobile: all pages usable on iPhone SE (375px) without horizontal scroll
 
 ---
 
 ## Phase Order Summary
 
-| Phase | Name | Depends On | Estimated Effort |
-|-------|------|------------|-----------------|
+| Phase | Name | Depends On | Effort |
+|-------|------|------------|--------|
 | 1 | Brand Identity | Nothing | 1–2 sessions (Canva work) |
-| 2 | Project Setup & Components | Phase 1 complete | 1 session |
-| 3 | Page Build | Phase 2 complete | 2–3 sessions |
-| 4 | Polish & Launch | Phase 3 complete | 1 session |
-
-**Total estimated sessions to launch: 5–7**
+| 2 | Project Setup and Shared Components | Phase 1 | 1 session |
+| 3 | Page Build | Phase 2 | 2–3 sessions |
+| 4 | Polish and Launch | Phase 3 | 1 session |
 
 ---
 
 ## Notes
 
 - **Phase 1 requires Dennis's input** — logo and color palette decision cannot be automated
-- **Phase 3 copy** depends on Dennis providing: founder bio, real phone number, real email, project details (even "Planning" stage projects need a working name and location)
-- **Renders:** For the Projects page, even a rough architectural sketch or AI-generated render is better than a blank card. Commission one good render before launch if possible (~$300–800)
+- **Phase 3 copy** depends on Dennis providing: founder bio, real phone number, real email, project details
+- **Renders:** For the Projects page, even a rough architectural sketch or AI-generated render beats a blank card
 - **BCFSA reminder:** Do not accept any form of deposit or financial commitment until a Disclosure Statement is filed with BC Financial Services Authority
