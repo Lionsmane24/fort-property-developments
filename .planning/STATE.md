@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 current_phase: 4 — Polish and Launch
-current_plan: 04 — Deployment
+current_plan: 05 — Launch Sequence
 status: active
-last_updated: "2026-03-14T23:58:00Z"
+last_updated: "2026-03-14T23:44:55Z"
 progress:
   total_phases: 4
   completed_phases: 3
   total_plans: 15
-  completed_plans: 13
+  completed_plans: 14
 ---
 
 # Project State: Fort Property Developments
@@ -23,8 +23,8 @@ _Last updated: 2026-03-14_
 
 **Active Milestone:** Milestone 1 — Launch-Ready Website
 **Current Phase:** 4 — Polish and Launch
-**Current Plan:** 04 — Deployment
-**Overall Progress:** [████████░░] 87% — Phase 1 complete, Phase 2 complete, Phase 3 complete, Phase 4 Plans 01-03 complete
+**Current Plan:** 05 — Launch Sequence
+**Overall Progress:** [█████████░] 93% — Phase 1 complete, Phase 2 complete, Phase 3 complete, Phase 4 Plans 01-04 complete
 
 ---
 
@@ -47,12 +47,13 @@ _Last updated: 2026-03-14_
 - [x] Phase 4 Plan 01: SEO Infrastructure — next-sitemap + next-plausible installed, postbuild hook wired, sitemap.xml + robots.txt generated
 - [x] Phase 4 Plan 02: SEO Page Metadata — metadataBase, title template, OG tags on all 5 files (layout + 4 pages), location keywords in descriptions
 - [x] Phase 4 Plan 03: Privacy Policy page — /privacy route live with PIPA BC content, favicon.ico (32x32) added
+- [x] Phase 4 Plan 04: Analytics — PlausibleProvider added to root layout, Plausible script injected on all pages, build passes
 
 ---
 
 ## Next Action
 
-**Phase 4 Plan 04: Deployment** — ready to begin.
+**Phase 4 Plan 05: Launch Sequence** — ready to begin.
 
 ---
 
@@ -74,6 +75,7 @@ _Last updated: 2026-03-14_
 14. **icon.png omitted — Turbopack conflict:** Adding app/icon.png alongside existing app/icon.svg causes TurbopackInternalError. Next.js App Router conflicts when two icon.* files coexist. icon.svg remains as SVG favicon. (Phase 4 Plan 03)
 15. **favicon.ico is PNG bytes:** sharp generates PNG regardless of extension; .ico named PNG works in all browsers and Next.js App Router accepts it. (Phase 4 Plan 03)
 14. **NEXT_TURBOPACK=0 required for next build on Windows:** Next.js 16.1.6 defaults to Turbopack for production builds but panics with Rust internal error on this machine. Webpack fallback via env var produces clean builds. (Phase 4 Plan 02)
+16. **PlausibleProvider wraps body children directly:** Server-compatible, no 'use client' needed. Domain www.FortPropertyDevelopments.com must match exactly what Dennis registers in Plausible dashboard. Script present in DOM before account activation — no runtime error. (Phase 4 Plan 04)
 
 ---
 
@@ -98,6 +100,7 @@ _Last updated: 2026-03-14_
 ## Git Log
 
 ```
+7382d0a feat(04-04): add PlausibleProvider to root layout
 1abefe0 feat(04-01): add next-sitemap config and generate sitemap + robots.txt
 caa5568 chore(04-01): install next-plausible and next-sitemap, add postbuild script
 a0f9366 feat(03-05): build Contact page with split layout and info block
@@ -107,5 +110,4 @@ a067b73 feat(03-01): add hero background image to public/images/
 6959368 fix(03-01): update Nav CTA to Register Interest linking to /contact
 4e8893a feat(02-03): create FadeIn and FadeInGroup animation utilities
 9854d5f feat(02-03): create Footer, Button, and Section server components
-a5b7899 feat(02-02): build full Nav component with sticky scroll shadow and mobile overlay
 ```
