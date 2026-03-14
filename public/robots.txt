@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.FortPropertyDevelopments.com
+
+# Sitemaps
+Sitemap: https://www.FortPropertyDevelopments.com/sitemap.xml
