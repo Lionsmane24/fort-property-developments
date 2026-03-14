@@ -45,20 +45,27 @@ Plans:
 
 **Requirements:** REQ-002, REQ-003
 
+**Plans:** 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Bootstrap Next.js into existing repo (packages, config files, layout, globals, page placeholder)
+- [ ] 02-02-PLAN.md — Nav component (sticky, scroll shadow, desktop links, mobile full-screen overlay)
+- [ ] 02-03-PLAN.md — Footer, Button, Section, FadeIn, FadeInGroup components
+
 **Deliverables:**
-- `npx create-next-app` initialized with App Router + TypeScript + Tailwind
-- `tailwind.config.js` with Fort color tokens and font config
-- Logo SVG placed in `/public/logo/`
-- `components/Nav.tsx` — responsive navigation with mobile hamburger
-- `components/Footer.tsx` — contact info, nav links, privacy link, dynamic copyright year
+- Next.js 15 manually installed into existing directory (no create-next-app)
+- `tailwind.config.js` with Fort color tokens and font config (preserved from Phase 1)
+- Logo SVG in `/public/logo/` (preserved from Phase 1)
+- `components/Nav.tsx` — sticky nav, scroll shadow, desktop links, mobile hamburger overlay
+- `components/Footer.tsx` — logo, nav links, contact info, privacy link, dynamic copyright year
 - `components/Button.tsx` — primary and secondary variants
 - `components/Section.tsx` — max-width container wrapper
-- Formspree account created, endpoint URL in `.env.local`
-- Google Fonts loaded via `next/font/google`
-- Framer Motion installed and basic scroll animation utility ready
+- `components/animations/FadeIn.tsx` — viewport-triggered fade (motion/react)
+- `components/animations/FadeInGroup.tsx` — 100ms staggered children
+- `.env.local` with Formspree placeholder
 - `app/layout.tsx` with shared Nav + Footer rendering on all pages
 
-**UAT:** Navigate to localhost:3000 — see nav with logo, working hamburger on mobile, footer with real contact info.
+**UAT:** Navigate to localhost:3000 — see nav with logo, working hamburger on mobile, footer with contact info.
 
 ---
 
