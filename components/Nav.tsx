@@ -69,10 +69,10 @@ export default function Nav() {
                   </Link>
                 ))}
               <a
-                href="#booking"
+                href="/contact"
                 className="inline-flex items-center justify-center px-5 py-2 rounded bg-fort-gold text-white font-sans text-sm font-semibold hover:bg-amber-600 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-fort-gold focus-visible:ring-offset-2 focus-visible:ring-offset-fort-charcoal"
               >
-                Book a Call
+                Register Interest
               </a>
             </nav>
 
@@ -124,11 +124,11 @@ export default function Nav() {
               </Link>
             ))}
             <a
-              href="#booking"
+              href="/contact"
               className="mt-4 inline-flex items-center justify-center px-8 py-3 rounded bg-fort-gold text-white font-sans text-base font-semibold hover:bg-amber-600 transition-colors duration-200"
               onClick={() => setMenuOpen(false)}
             >
-              Book a Call
+              Register Interest
             </a>
           </nav>
         </div>
