@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 80">
-  <!-- Fort favicon mark — battlement only, no text -->
-  <!-- Base horizontal bar -->
-  <rect x="0" y="52" width="96" height="5" fill="#2C4A2E"/>
-  <!-- Left merlon -->
-  <rect x="0" y="20" width="22" height="36" fill="#2C4A2E"/>
-  <!-- Middle merlon -->
-  <rect x="37" y="20" width="22" height="36" fill="#2C4A2E"/>
-  <!-- Right merlon -->
-  <rect x="74" y="20" width="22" height="36" fill="#2C4A2E"/>
-  <!-- Gold accent line -->
-  <rect x="0" y="63" width="96" height="2" fill="#B8860B"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Favicon — "F" monogram, Inter Bold, charcoal square -->
+  <rect width="100" height="100" rx="8" fill="#1A1A2E"/>
+  <text
+    x="50"
+    y="74"
+    text-anchor="middle"
+    font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-size="68"
+    font-weight="700"
+    fill="#FFFFFF"
+  >F</text>
+  <rect x="18" y="82" width="64" height="3" fill="#C4973A"/>
 </svg>

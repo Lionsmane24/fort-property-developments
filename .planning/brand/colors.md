@@ -1,57 +1,55 @@
 # Fort Property Developments — Brand Color Tokens
 
-_Status: FINAL — Palette confirmed from Fort_PD_Brand_Guide.docx — 2026-03-14_
+_Status: FINAL — Palette confirmed, matching existing website — 2026-03-14_
 
 ---
 
-## Brand Palette — Official (from Brand Guide)
+## Brand Palette
 
 | Token | Name | Hex | Usage |
 |-------|------|-----|-------|
-| `fort-green` | Heritage Green | `#2C4A2E` | Headings, logo, borders, nav background |
-| `fort-gold` | Fort Gold | `#B8860B` | CTAs, highlights, dividers, accents |
-| `fort-cream` | Craftsman Cream | `#F5F0E8` | Page background, card backgrounds, pull-quote boxes |
-| `fort-black` | Estate Black | `#2D2D2D` | Body text, footer, legal copy |
-
-**Character:** Heritage and nature — deep Fraser Valley forest greens, warm gold of aged wood and historic brick, creamy neutrals evoking craftsmanship and quality.
+| `fort-charcoal` | Charcoal | `#1A1A2E` | Primary dark — nav, logo wordmark, footer, headings |
+| `fort-blue` | Deep Blue | `#1B3A6B` | Section backgrounds, accents, links |
+| `fort-gold` | Gold | `#C4973A` | CTAs, eyebrows, highlights, dividers, logo sub-text |
+| `fort-bg` | Off-white | `#F8F6F1` | Page background, card backgrounds |
+| `fort-gray` | Gray | `#374151` | Body text |
 
 ---
 
 ## Typography
 
-| Role | Typeface | Type | Tailwind Class |
-|------|----------|------|----------------|
-| Headlines, taglines, pull-quotes, brand name | Georgia | System serif | `font-serif` |
-| Body text, nav, labels, buttons, captions | Arial | System sans | `font-sans` (default) |
+| Role | Typeface | Weights | CSS Variable |
+|------|----------|---------|--------------|
+| Headings (H1–H5), taglines | Playfair Display | 400, 500, 600, 700, 900 | `--font-playfair` / `font-serif` |
+| Body, nav, labels, buttons | Inter | 300, 400, 500, 600, 700 | `--font-inter` / `font-sans` |
 
-**System fonts** — universally available, zero loading overhead. No Google Fonts CDN needed.
+Both loaded via `next/font/google` in `app/fonts.ts`.
 
-**Do not use Georgia below 18px** — it is a display face optimized for larger sizes.
+---
+
+## Logo
+
+- **Wordmark:** "Fort" in Inter Bold 700, mixed case, charcoal (`#1A1A2E`) on light / white on dark
+- **Sub-text:** "PROPERTY DEVELOPMENTS" in Inter SemiBold 600, letter-spacing 6px, gold (`#C4973A`)
+- **Favicon:** "F" in Inter Bold on charcoal square, gold accent bar at bottom
 
 ---
 
 ## Tailwind Token Names
 
-| Token Name | Hex | Tailwind Utilities Generated |
-|------------|-----|------------------------------|
-| `fort-green` | `#2C4A2E` | `bg-fort-green`, `text-fort-green`, `border-fort-green` |
-| `fort-gold` | `#B8860B` | `bg-fort-gold`, `text-fort-gold`, `border-fort-gold` |
-| `fort-cream` | `#F5F0E8` | `bg-fort-cream`, `text-fort-cream`, `border-fort-cream` |
-| `fort-black` | `#2D2D2D` | `bg-fort-black`, `text-fort-black`, `border-fort-black` |
-
----
-
-## Brand Tagline
-
-**Built on Heritage. Designed for Today.**
-
-Use on every touchpoint: email signatures, signage, social media bios, printed materials.
+| Token | Hex | Tailwind Utilities |
+|-------|-----|--------------------|
+| `fort-charcoal` | `#1A1A2E` | `bg-fort-charcoal`, `text-fort-charcoal` |
+| `fort-blue` | `#1B3A6B` | `bg-fort-blue`, `text-fort-blue` |
+| `fort-gold` | `#C4973A` | `bg-fort-gold`, `text-fort-gold` |
+| `fort-bg` | `#F8F6F1` | `bg-fort-bg`, `text-fort-bg` |
+| `fort-gray` | `#374151` | `text-fort-gray` |
 
 ---
 
 ## Decision Log
 
-- [x] Palette confirmed from Fort_PD_Brand_Guide.docx — 2026-03-14
-- [x] Logo: battlement mark + wordmark (fort/merlon icon) — 2026-03-14
-- [x] Fonts: Georgia (serif) + Arial (sans) — system fonts — 2026-03-14
-- [x] tailwind.config.js updated with fort-green, fort-gold, fort-cream, fort-black — 2026-03-14
+- [x] Palette confirmed — matching existing website style — 2026-03-14
+- [x] Logo: "Fort" wordmark (Inter Bold, mixed case) — 2026-03-14
+- [x] Fonts: Playfair Display (serif) + Inter (sans) via next/font — 2026-03-14
+- [x] tailwind.config.js updated with fort-charcoal, fort-blue, fort-gold, fort-bg, fort-gray — 2026-03-14

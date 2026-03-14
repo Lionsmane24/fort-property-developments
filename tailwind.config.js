@@ -7,16 +7,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // System fonts — no loading overhead, universally available
-        sans:  ['Arial', 'Helvetica Neue', 'sans-serif'],
-        serif: ['Georgia', 'Times New Roman', 'serif'],
+        sans:  ['var(--font-inter)', 'Helvetica Neue', 'sans-serif'],
+        serif: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
       colors: {
-        // Fort Property Developments Brand Palette — from Fort_PD_Brand_Guide.docx
-        'fort-green':  '#2C4A2E',   // Heritage Green — headings, logo, borders, nav background
-        'fort-gold':   '#B8860B',   // Fort Gold — CTAs, highlights, dividers, accents
-        'fort-cream':  '#F5F0E8',   // Craftsman Cream — page background, card backgrounds
-        'fort-black':  '#2D2D2D',   // Estate Black — body text, footer, legal copy
+        // Fort Property Developments Brand Palette
+        'fort-charcoal': '#1A1A2E',   // Primary dark — nav, logo, headings, footer
+        'fort-blue':     '#1B3A6B',   // Deep blue — section backgrounds, accents
+        'fort-gold':     '#C4973A',   // Gold — CTAs, highlights, eyebrows, dividers
+        'fort-bg':       '#F8F6F1',   // Off-white — page background, card backgrounds
+        'fort-gray':     '#374151',   // Body text
       },
     },
   },
