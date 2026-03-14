@@ -75,6 +75,16 @@ Plans:
 
 **Requirements:** REQ-004, REQ-005, REQ-006, REQ-007
 
+**Plans:** 6 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Foundation: fix Nav CTA, update Footer contact info, download hero image
+- [ ] 03-02-PLAN.md — Home page: hero, value strip, projects preview, about teaser, trust bar, CTA banner
+- [ ] 03-03-PLAN.md — About page: subpage hero, founder bio, values, Fort Difference, service area, affiliations, CTA
+- [ ] 03-04-PLAN.md — Projects page: project card grid, RegisterInterestForm, pre-launch empty state
+- [ ] 03-05-PLAN.md — Contact page: split layout, ContactForm with Formspree integration and fallback
+- [ ] 03-06-PLAN.md — Human verify checkpoint: all 4 pages at localhost:3000 desktop + mobile
+
 **Deliverables:**
 
 **Home Page (`app/page.tsx`):**
@@ -97,7 +107,7 @@ Plans:
 **Projects Page (`app/projects/page.tsx`):**
 - Page header
 - Project cards grid (at least 1 Planning-stage project)
-- Register Interest form/modal (email capture per project)
+- Register Interest inline form (email capture per project)
 - Pre-launch empty state with email capture
 
 **Contact Page (`app/contact/page.tsx`):**
