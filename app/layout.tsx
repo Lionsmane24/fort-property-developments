@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { inter, playfair } from './fonts'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import PlausibleProvider from 'next-plausible'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -27,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-fort-bg text-fort-gray font-sans">
-        <Nav />
-        <main>{children}</main>
-        <Footer />
+        <PlausibleProvider domain="www.FortPropertyDevelopments.com">
+          <Nav />
+          <main>{children}</main>
+          <Footer />
+        </PlausibleProvider>
       </body>
     </html>
   )
