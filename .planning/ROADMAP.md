@@ -45,10 +45,10 @@ Plans:
 
 **Requirements:** REQ-002, REQ-003
 
-**Plans:** 3 plans
+**Plans:** 1/3 plans executed
 
 Plans:
-- [ ] 02-01-PLAN.md — Bootstrap Next.js into existing repo (packages, config files, layout, globals, page placeholder)
+- [x] 02-01-PLAN.md — Bootstrap Next.js into existing repo (packages, config files, layout, globals, page placeholder)
 - [ ] 02-02-PLAN.md — Nav component (sticky, scroll shadow, desktop links, mobile full-screen overlay)
 - [ ] 02-03-PLAN.md — Footer, Button, Section, FadeIn, FadeInGroup components
 
@@ -147,7 +147,7 @@ Plans:
 | Phase | Name | Depends On | Effort |
 |-------|------|------------|--------|
 | 1 | Brand Identity | Nothing | 1–2 sessions (Canva work) |
-| 2 | Project Setup and Shared Components | Phase 1 | 1 session |
+| 2 | 1/3 | In Progress|  |
 | 3 | Page Build | Phase 2 | 2–3 sessions |
 | 4 | Polish and Launch | Phase 3 | 1 session |
 
