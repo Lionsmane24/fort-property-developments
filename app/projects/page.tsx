@@ -1,11 +1,16 @@
+import type { Metadata } from 'next'
 import { Section } from '@/components/Section'
 import { FadeIn } from '@/components/animations/FadeIn'
 import RegisterInterestForm from '@/components/RegisterInterestForm'
 
-export const metadata = {
-  title: 'Our Developments | Fort Property Developments',
-  description:
-    'Fort Property Developments builds 4–6 unit multiplex infill across Metro Vancouver and the Fraser Valley. Register interest in upcoming projects.',
+export const metadata: Metadata = {
+  title: 'Our Developments',
+  description: 'Current and upcoming multiplex infill projects by Fort Property Developments in Burnaby, Surrey, North Vancouver, Coquitlam, and the Fraser Valley.',
+  openGraph: {
+    title: 'Our Developments | Fort Property Developments',
+    description: 'Multiplex infill projects across Metro Vancouver — register interest for early access.',
+    images: [{ url: '/images/hero-bg.jpg', width: 1200, height: 630 }],
+  },
 }
 
 export default function ProjectsPage() {

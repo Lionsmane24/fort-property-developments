@@ -1,5 +1,16 @@
+import type { Metadata } from 'next'
 import { Section } from '@/components/Section'
 import ContactForm from '@/components/ContactForm'
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  description: 'Get in touch with Fort Property Developments. We build multiplex infill in Burnaby, Surrey, North Vancouver, Coquitlam, and the Fraser Valley. Responds within 1 business day.',
+  openGraph: {
+    title: 'Contact | Fort Property Developments',
+    description: 'Register interest or ask a question — we respond within 1 business day.',
+    images: [{ url: '/images/hero-bg.jpg', width: 1200, height: 630 }],
+  },
+}
 
 export default function ContactPage() {
   return (

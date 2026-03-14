@@ -1,12 +1,17 @@
+import type { Metadata } from 'next'
 import { Section } from '@/components/Section'
 import { Button } from '@/components/Button'
 import { FadeIn } from '@/components/animations/FadeIn'
 import { FadeInGroup } from '@/components/animations/FadeInGroup'
 
-export const metadata = {
-  title: 'About | Fort Property Developments',
-  description:
-    'BC-rooted. Metro Vancouver focused. Learn about Fort Property Developments and our approach to multiplex infill housing.',
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'Meet Dennis and the Fort Property Developments team — BC-rooted multiplex infill developers serving Burnaby, Surrey, North Vancouver, Coquitlam, and the Fraser Valley.',
+  openGraph: {
+    title: 'About | Fort Property Developments',
+    description: 'BC-rooted multiplex infill development — meet the Fort team.',
+    images: [{ url: '/images/hero-bg.jpg', width: 1200, height: 630 }],
+  },
 }
 
 export default function AboutPage() {

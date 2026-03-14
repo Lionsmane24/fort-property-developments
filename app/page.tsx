@@ -1,8 +1,22 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { Section } from '@/components/Section'
 import { FadeIn } from '@/components/animations/FadeIn'
 import { FadeInGroup } from '@/components/animations/FadeInGroup'
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Fort Property Developments | Multiplex Infill Developer — Metro Vancouver',
+  },
+  description: 'Fort Property Developments builds 4–6 unit multiplex infill in Burnaby, Surrey, North Vancouver, Coquitlam, and the Fraser Valley.',
+  openGraph: {
+    title: 'Fort Property Developments | Multiplex Infill Developer — Metro Vancouver',
+    description: 'Density done right — 4–6 unit multiplex infill across Metro Vancouver and the Fraser Valley.',
+    images: [{ url: '/images/hero-bg.jpg', width: 1200, height: 630, alt: 'Fort Property Developments — Metro Vancouver multiplex infill' }],
+    type: 'website',
+  },
+}
 
 export default function Home() {
   return (
