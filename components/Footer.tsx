@@ -58,12 +58,11 @@ export default function Footer() {
               Contact
             </h3>
             <div className="flex flex-col gap-2 text-sm text-gray-300">
-              {/* Real email + phone provided by Dennis in Phase 3 */}
-              <a href="mailto:info@fortpropertydev.com" className="hover:text-white transition-colors duration-200">
-                info@fortpropertydev.com
+              <a href="mailto:Dennis@fortpropertydevelopment.com" className="hover:text-white transition-colors duration-200">
+                Dennis@fortpropertydevelopment.com
               </a>
-              <a href="tel:+16045550000" className="hover:text-white transition-colors duration-200">
-                (604) 555-0000
+              <a href="tel:+16042906046" className="hover:text-white transition-colors duration-200">
+                604-290-6046
               </a>
               <p className="text-gray-400 mt-2">
                 Serving Metro Vancouver · Fraser Valley · North Shore · Tri-Cities
