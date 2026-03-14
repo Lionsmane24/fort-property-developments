@@ -75,7 +75,7 @@ Plans:
 
 **Requirements:** REQ-004, REQ-005, REQ-006, REQ-007
 
-**Plans:** 1/6 plans executed
+**Plans:** 5/6 plans executed
 
 Plans:
 - [ ] 03-01-PLAN.md — Foundation: fix Nav CTA, update Footer contact info, download hero image
@@ -158,7 +158,7 @@ Plans:
 |-------|------|------------|--------|
 | 1 | Brand Identity | Nothing | 1–2 sessions (Canva work) |
 | 2 | 3/3 | Complete   | 2026-03-14 |
-| 3 | 1/6 | In Progress|  |
+| 3 | 5/6 | In Progress|  |
 | 4 | Polish and Launch | Phase 3 | 1 session |
 
 ---
