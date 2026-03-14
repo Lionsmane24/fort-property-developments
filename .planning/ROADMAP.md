@@ -130,7 +130,7 @@ Plans:
 
 **Requirements:** REQ-008, REQ-009, REQ-010
 
-**Plans:** 1/5 plans executed
+**Plans:** 3/5 plans executed
 
 Plans:
 - [ ] 04-01-PLAN.md — Install next-sitemap + next-plausible, add postbuild script, write sitemap config
@@ -168,7 +168,7 @@ Plans:
 | 1 | Brand Identity | Nothing | 1–2 sessions (Canva work) |
 | 2 | 3/3 | Complete   | 2026-03-14 |
 | 3 | 5/6 | In Progress|  |
-| 4 | 1/5 | In Progress|  |
+| 4 | 3/5 | In Progress|  |
 
 ---
 

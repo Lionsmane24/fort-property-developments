@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 current_phase: 4 — Polish and Launch
-current_plan: 01 — SEO Infrastructure
+current_plan: 04 — Deployment
 status: active
-last_updated: "2026-03-14T23:40:00Z"
+last_updated: "2026-03-14T23:58:00Z"
 progress:
   total_phases: 4
   completed_phases: 3
   total_plans: 15
-  completed_plans: 7
+  completed_plans: 13
 ---
 
 # Project State: Fort Property Developments
@@ -23,8 +23,8 @@ _Last updated: 2026-03-14_
 
 **Active Milestone:** Milestone 1 — Launch-Ready Website
 **Current Phase:** 4 — Polish and Launch
-**Current Plan:** 01 — SEO Infrastructure (complete)
-**Overall Progress:** [███████░░░] 73% — Phase 1 complete, Phase 2 complete, Phase 3 complete, Phase 4 Plan 01 complete
+**Current Plan:** 04 — Deployment
+**Overall Progress:** [████████░░] 87% — Phase 1 complete, Phase 2 complete, Phase 3 complete, Phase 4 Plans 01-03 complete
 
 ---
 
@@ -45,12 +45,14 @@ _Last updated: 2026-03-14_
 - [x] Phase 3 Plan 05: Contact page — split layout, info block with email/phone, Formspree ContactForm with mailto fallback
 - [x] Phase 3 Plan 06: Human verification — all 4 pages approved at desktop + mobile by Dennis (2026-03-14)
 - [x] Phase 4 Plan 01: SEO Infrastructure — next-sitemap + next-plausible installed, postbuild hook wired, sitemap.xml + robots.txt generated
+- [x] Phase 4 Plan 02: SEO Page Metadata — metadataBase, title template, OG tags on all 5 files (layout + 4 pages), location keywords in descriptions
+- [x] Phase 4 Plan 03: Privacy Policy page — /privacy route live with PIPA BC content, favicon.ico (32x32) added
 
 ---
 
 ## Next Action
 
-**Phase 4 Plan 02: Privacy page** — ready to begin.
+**Phase 4 Plan 04: Deployment** — ready to begin.
 
 ---
 
@@ -69,6 +71,7 @@ _Last updated: 2026-03-14_
 11. **No FadeIn on Contact page:** Form is primary CTA — renders immediately without animation delay. (Phase 3 Plan 05)
 12. **Formspree fallback condition:** Triggers when !ENDPOINT or ENDPOINT === 'xxx' — covers both missing and placeholder states, shows mailto link. (Phase 3 Plan 05)
 13. **next-sitemap generates index + page sitemaps:** sitemap.xml is the index; sitemap-0.xml holds the page URLs — both committed to public/. (Phase 4 Plan 01)
+14. **NEXT_TURBOPACK=0 required for next build on Windows:** Next.js 16.1.6 defaults to Turbopack for production builds but panics with Rust internal error on this machine. Webpack fallback via env var produces clean builds. (Phase 4 Plan 02)
 
 ---
 
