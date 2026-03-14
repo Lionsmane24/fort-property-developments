@@ -71,6 +71,8 @@ _Last updated: 2026-03-14_
 11. **No FadeIn on Contact page:** Form is primary CTA — renders immediately without animation delay. (Phase 3 Plan 05)
 12. **Formspree fallback condition:** Triggers when !ENDPOINT or ENDPOINT === 'xxx' — covers both missing and placeholder states, shows mailto link. (Phase 3 Plan 05)
 13. **next-sitemap generates index + page sitemaps:** sitemap.xml is the index; sitemap-0.xml holds the page URLs — both committed to public/. (Phase 4 Plan 01)
+14. **icon.png omitted — Turbopack conflict:** Adding app/icon.png alongside existing app/icon.svg causes TurbopackInternalError. Next.js App Router conflicts when two icon.* files coexist. icon.svg remains as SVG favicon. (Phase 4 Plan 03)
+15. **favicon.ico is PNG bytes:** sharp generates PNG regardless of extension; .ico named PNG works in all browsers and Next.js App Router accepts it. (Phase 4 Plan 03)
 14. **NEXT_TURBOPACK=0 required for next build on Windows:** Next.js 16.1.6 defaults to Turbopack for production builds but panics with Rust internal error on this machine. Webpack fallback via env var produces clean builds. (Phase 4 Plan 02)
 
 ---

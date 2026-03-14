@@ -133,9 +133,9 @@ Plans:
 **Plans:** 3/5 plans executed
 
 Plans:
-- [ ] 04-01-PLAN.md — Install next-sitemap + next-plausible, add postbuild script, write sitemap config
-- [ ] 04-02-PLAN.md — SEO metadata on root layout and all 4 pages (titles, descriptions, OG tags)
-- [ ] 04-03-PLAN.md — Privacy Policy page at /privacy + favicon.ico + icon.png
+- [x] 04-01-PLAN.md — Install next-sitemap + next-plausible, add postbuild script, write sitemap config
+- [x] 04-02-PLAN.md — SEO metadata on root layout and all 4 pages (titles, descriptions, OG tags)
+- [x] 04-03-PLAN.md — Privacy Policy page at /privacy + favicon.ico + icon.png
 - [ ] 04-04-PLAN.md — Plausible analytics via PlausibleProvider in root layout
 - [ ] 04-05-PLAN.md — Launch sequence: Formspree activation, Lighthouse audit, Vercel deploy, domain DNS
 
@@ -168,7 +168,7 @@ Plans:
 | 1 | Brand Identity | Nothing | 1–2 sessions (Canva work) |
 | 2 | 3/3 | Complete   | 2026-03-14 |
 | 3 | 5/6 | In Progress|  |
-| 4 | 3/5 | In Progress|  |
+| 4 | 3/5 | In Progress | Plans 01-03 complete |
 
 ---
 
