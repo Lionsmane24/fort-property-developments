@@ -108,6 +108,96 @@ export default function Home() {
           ]}
         </FadeInGroup>
       </Section>
+
+      {/* Section 3: Projects preview */}
+      <Section id="projects" className="bg-fort-bg">
+        <FadeIn>
+          <h2 className="font-serif text-3xl md:text-4xl text-fort-charcoal">Our Developments</h2>
+          <p className="font-sans text-fort-gray mt-2">
+            BC&apos;s next generation of missing middle housing.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            {/* Burnaby Multiplex card */}
+            <div className="rounded-lg border border-fort-charcoal/10 overflow-hidden bg-white">
+              <div className="h-48 bg-fort-charcoal/10 rounded-t-lg flex items-center justify-center">
+                <span className="font-sans text-fort-gray text-sm">Render coming soon</span>
+              </div>
+              <div className="p-5">
+                <span className="inline-block px-2 py-1 rounded text-xs font-semibold bg-amber-100 text-amber-800">
+                  Planning
+                </span>
+                <h3 className="font-serif text-xl text-fort-charcoal mt-2">Burnaby Multiplex</h3>
+                <p className="font-sans text-fort-gray text-sm mt-1">4-unit infill &bull; Burnaby, BC</p>
+                <Button href="/projects" variant="secondary" className="mt-4">
+                  Register Interest
+                </Button>
+              </div>
+            </div>
+          </div>
+          <p className="text-fort-gray font-sans text-sm text-center mt-6">
+            More projects coming soon
+          </p>
+        </FadeIn>
+      </Section>
+
+      {/* Section 4: About teaser */}
+      <Section className="bg-white">
+        <FadeIn>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left: founder photo placeholder */}
+            <div className="w-full h-72 md:h-96 bg-fort-charcoal/10 rounded-lg flex items-center justify-center">
+              <span className="font-sans text-fort-gray text-sm">Founder photo coming soon</span>
+            </div>
+            {/* Right: copy */}
+            <div>
+              <h2 className="font-serif text-3xl text-fort-charcoal">Fort&apos;s Foundation</h2>
+              <p className="font-sans text-fort-gray mt-4 leading-relaxed">
+                Dennis founded Fort Property Developments to bring thoughtful, high-quality multiplex
+                infill to Metro Vancouver communities. With BC roots and a focus on the missing
+                middle, Fort builds homes that strengthen neighbourhoods for the long term.
+              </p>
+              <Button href="/about" variant="secondary" className="mt-6">
+                Learn More
+              </Button>
+            </div>
+          </div>
+        </FadeIn>
+      </Section>
+
+      {/* Section 5: Trust bar */}
+      <Section className="bg-fort-bg">
+        <p className="font-sans text-fort-gray text-sm uppercase tracking-widest text-center mb-6">
+          Industry Affiliations
+        </p>
+        <div className="flex flex-wrap justify-center gap-6">
+          {/* TODO: Replace text badges with real affiliation logos when provided */}
+          <div className="px-6 py-3 border border-fort-gray/30 rounded font-sans text-fort-charcoal font-semibold text-sm">
+            CHBA Member
+          </div>
+          <div className="px-6 py-3 border border-fort-gray/30 rounded font-sans text-fort-charcoal font-semibold text-sm">
+            HAVAN Member
+          </div>
+          <div className="px-6 py-3 border border-fort-gray/30 rounded font-sans text-fort-charcoal font-semibold text-sm">
+            UDI BC
+          </div>
+        </div>
+      </Section>
+
+      {/* Section 6: CTA banner */}
+      <section className="bg-fort-charcoal py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif text-3xl md:text-4xl text-white">
+            Stay Ahead of the Market
+          </h2>
+          <p className="font-sans text-gray-300 mt-4 max-w-xl mx-auto">
+            Be the first to hear about new Fort developments. Register your interest today &mdash;
+            no commitment, no deposit.
+          </p>
+          <Button href="/contact" className="mt-8">
+            Register Interest
+          </Button>
+        </div>
+      </section>
     </main>
   )
 }
