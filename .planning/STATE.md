@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 current_phase: 3 — Page Build
-current_plan: 04 (Projects page)
-status: unknown
-last_updated: "2026-03-14T22:48:39.296Z"
+current_plan: 06 (next plan)
+status: in-progress
+last_updated: "2026-03-14T22:49:00Z"
 progress:
   total_phases: 4
   completed_phases: 2
   total_plans: 10
-  completed_plans: 9
+  completed_plans: 5
 ---
 
 # Project State: Fort Property Developments
@@ -23,8 +23,8 @@ _Last updated: 2026-03-14_
 
 **Active Milestone:** Milestone 1 — Launch-Ready Website
 **Current Phase:** 3 — Page Build
-**Current Plan:** 04 (Projects page)
-**Overall Progress:** [███████░░░] 70% — Phase 1 complete, Phase 2 complete, Phase 3 Plans 01–03 complete
+**Current Plan:** 06 (next plan)
+**Overall Progress:** [█████████░] 90% — Phase 1 complete, Phase 2 complete, Phase 3 Plans 01–05 complete
 
 ---
 
@@ -41,12 +41,14 @@ _Last updated: 2026-03-14_
 - [x] Phase 3 Plan 01: Carryover fixes — Nav CTA "Register Interest" → /contact, Footer real contact info, hero-bg.jpg added
 - [x] Phase 3 Plan 02: Home page — hero, trust bar, intro, projects teaser, CTA (complete)
 - [x] Phase 3 Plan 03: About page — 7 sections, server component, founder bio, values, Fort Difference, service area, affiliations, CTA
+- [x] Phase 3 Plan 04: Projects page — project card grid, Burnaby Multiplex card, CTA section
+- [x] Phase 3 Plan 05: Contact page — split layout, info block with email/phone, Formspree ContactForm with mailto fallback
 
 ---
 
 ## Next Action
 
-Execute Phase 3 Plan 04: Projects page build.
+Execute Phase 3 Plan 06 (final phase 3 plan, if any) or Phase 4.
 
 ---
 
@@ -60,10 +62,10 @@ Execute Phase 3 Plan 04: Projects page build.
 6. **Button renders as anchor when href provided:** Button component renders as `<a>` when href prop is present, `<button>` otherwise — avoids nested interactive element issues. (Phase 2 Plan 03)
 7. **Unsplash q=25 for hero image:** q=80 gave 706KB, q=40 gave 385KB, q=25 gave 256KB — under the 300KB REQ-010 constraint at acceptable visual quality. (Phase 3 Plan 01)
 8. **Nav has two separate CTA anchors:** Desktop nav and mobile overlay each have their own `<a>` element — both updated to "Register Interest" / /contact. (Phase 3 Plan 01)
-9. **FadeInGroup children as JSX array:** FadeInGroup requires `React.ReactNode[]` — value strip columns passed as explicit JSX array literal `{[<div key="a">...</div>, ...]}`. (Phase 3 Plan 02)
-10. **CTA banner outside Section component:** Raw `<section>` used for bg-fort-charcoal full-width bleed; Section wrapper constrains background to content container. (Phase 3 Plan 02)
-11. **About page tasks implemented in single write:** Both plan tasks target the same file — all 7 sections written together and verified with one build pass. (Phase 3 Plan 03)
-12. **Inline SVG icons for values:** No icon library added — simple stroke-based inline SVG paths for three value icons keep zero new dependencies. (Phase 3 Plan 03)
+9. **About page tasks implemented in single write:** Both plan tasks target the same file — all 7 sections written together and verified with one build pass. (Phase 3 Plan 03)
+10. **Inline SVG icons for values:** No icon library added — simple stroke-based inline SVG paths for three value icons keep zero new dependencies. (Phase 3 Plan 03)
+11. **No FadeIn on Contact page:** Form is primary CTA — renders immediately without animation delay. (Phase 3 Plan 05)
+12. **Formspree fallback condition:** Triggers when !ENDPOINT or ENDPOINT === 'xxx' — covers both missing and placeholder states, shows mailto link. (Phase 3 Plan 05)
 
 ---
 
@@ -88,9 +90,8 @@ Execute Phase 3 Plan 04: Projects page build.
 ## Git Log
 
 ```
-3bc2c5e feat(03-02): complete Home page with projects preview, about teaser, trust bar, CTA banner
-af0d1f9 feat(03-02): build Home page hero and value strip sections
-1fe4bda feat(03-03): create About page — hero, founder section, and values
+a0f9366 feat(03-05): build Contact page with split layout and info block
+e6ae8e7 feat(03-05): create ContactForm client component with Formspree integration
 a067b73 feat(03-01): add hero background image to public/images/
 89311e6 fix(03-01): replace Footer placeholder contact info with real values
 6959368 fix(03-01): update Nav CTA to Register Interest linking to /contact
