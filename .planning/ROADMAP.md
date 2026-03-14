@@ -130,6 +130,15 @@ Plans:
 
 **Requirements:** REQ-008, REQ-009, REQ-010
 
+**Plans:** 5 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Install next-sitemap + next-plausible, add postbuild script, write sitemap config
+- [ ] 04-02-PLAN.md — SEO metadata on root layout and all 4 pages (titles, descriptions, OG tags)
+- [ ] 04-03-PLAN.md — Privacy Policy page at /privacy + favicon.ico + icon.png
+- [ ] 04-04-PLAN.md — Plausible analytics via PlausibleProvider in root layout
+- [ ] 04-05-PLAN.md — Launch sequence: Formspree activation, Lighthouse audit, Vercel deploy, domain DNS
+
 **Deliverables:**
 - SEO: `metadata` export on all 4 pages (title, description, OG tags)
 - Location keywords woven into copy (Burnaby, Surrey, North Vancouver, Coquitlam, Fraser Valley)
@@ -138,8 +147,8 @@ Plans:
 - All images through `next/image` (auto WebP, lazy load)
 - Hero image < 300KB, card images < 100KB
 - `sitemap.xml` and `robots.txt` generated
-- Favicon: `.ico` + 192px PNG added to `/public/`
-- Google Analytics 4 or Plausible installed and tracking
+- Favicon: `.ico` + 192px PNG added to `app/`
+- Plausible analytics installed and tracking
 - Vercel deployment: `git push` auto-deploy pipeline working
 - Custom domain `www.FortPropertyDevelopments.com` connected in Vercel
 - SSL certificate active (Vercel auto-provisions)
