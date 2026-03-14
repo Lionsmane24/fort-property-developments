@@ -1,60 +1,57 @@
 # Fort Property Developments — Brand Color Tokens
 
-_Status: PENDING Dennis palette decision_
+_Status: FINAL — Palette confirmed from Fort_PD_Brand_Guide.docx — 2026-03-14_
 
 ---
 
-## Color Palettes
+## Brand Palette — Official (from Brand Guide)
 
-### Palette A — Charcoal + Copper (CANDIDATE)
+| Token | Name | Hex | Usage |
+|-------|------|-----|-------|
+| `fort-green` | Heritage Green | `#2C4A2E` | Headings, logo, borders, nav background |
+| `fort-gold` | Fort Gold | `#B8860B` | CTAs, highlights, dividers, accents |
+| `fort-cream` | Craftsman Cream | `#F5F0E8` | Page background, card backgrounds, pull-quote boxes |
+| `fort-black` | Estate Black | `#2D2D2D` | Body text, footer, legal copy |
 
-| Token | Hex | Usage |
-|-------|-----|-------|
-| `fort-dark` | `#1C1C1E` | Nav background, footer, headings, body text on light bg |
-| `fort-accent` | `#B87333` | CTAs, highlights, active states, dividers |
-| `fort-bg` | `#F5F0EB` | Page background, card backgrounds |
-
-**Character:** Refined, warm authority. Copper against charcoal reads as a heritage craft company with modern discipline.
-
-### Palette C — Forest + Stone (CANDIDATE)
-
-| Token | Hex | Usage |
-|-------|-----|-------|
-| `fort-dark` | `#1E3A2F` | Nav background, footer, headings, body text on light bg |
-| `fort-accent` (use `fort-stone` in config) | `#8B7355` | CTAs, highlights, active states |
-| `fort-bg` | `#FAFAF8` | Page background, card backgrounds |
-
-**Character:** Grounded, sustainable, BC-rooted. Forest green signals environmental responsibility; stone reads as solid and enduring.
+**Character:** Heritage and nature — deep Fraser Valley forest greens, warm gold of aged wood and historic brick, creamy neutrals evoking craftsmanship and quality.
 
 ---
 
 ## Typography
 
-| Role | Typeface | Weights | CSS Class |
-|------|----------|---------|-----------|
-| Headings (H1–H3) | Cormorant Garamond | 300, 400, 600, 700 | `font-serif` |
-| Body, nav, labels, buttons | Inter | 400, 500, 600 | `font-sans` (default) |
+| Role | Typeface | Type | Tailwind Class |
+|------|----------|------|----------------|
+| Headlines, taglines, pull-quotes, brand name | Georgia | System serif | `font-serif` |
+| Body text, nav, labels, buttons, captions | Arial | System sans | `font-sans` (default) |
 
-**Do not use Cormorant Garamond below 24px** — it is a display face optimized for large sizes.
+**System fonts** — universally available, zero loading overhead. No Google Fonts CDN needed.
+
+**Do not use Georgia below 18px** — it is a display face optimized for larger sizes.
 
 ---
 
-## Tailwind Token Names (stable regardless of palette choice)
+## Tailwind Token Names
 
-The token NAMES below are fixed. Only the HEX VALUES change depending on which palette Dennis selects.
+| Token Name | Hex | Tailwind Utilities Generated |
+|------------|-----|------------------------------|
+| `fort-green` | `#2C4A2E` | `bg-fort-green`, `text-fort-green`, `border-fort-green` |
+| `fort-gold` | `#B8860B` | `bg-fort-gold`, `text-fort-gold`, `border-fort-gold` |
+| `fort-cream` | `#F5F0E8` | `bg-fort-cream`, `text-fort-cream`, `border-fort-cream` |
+| `fort-black` | `#2D2D2D` | `bg-fort-black`, `text-fort-black`, `border-fort-black` |
 
-| Token Name | Tailwind Utilities Generated |
-|------------|------------------------------|
-| `fort-dark` | `bg-fort-dark`, `text-fort-dark`, `border-fort-dark` |
-| `fort-accent` | `bg-fort-accent`, `text-fort-accent`, `border-fort-accent` |
-| `fort-bg` | `bg-fort-bg`, `text-fort-bg`, `border-fort-bg` |
+---
 
-**Critical:** Use only these three names throughout all components. Never use `fort-dark-a` or `fort-dark-c` variants.
+## Brand Tagline
+
+**Built on Heritage. Designed for Today.**
+
+Use on every touchpoint: email signatures, signage, social media bios, printed materials.
 
 ---
 
 ## Decision Log
 
-- [ ] Palette selected: __ (A or C) — Date: __
-- [ ] Logo option selected: __ (Option 1 or Option 2) — Date: __
-- [ ] Final tailwind.config.js updated with chosen palette: __
+- [x] Palette confirmed from Fort_PD_Brand_Guide.docx — 2026-03-14
+- [x] Logo: battlement mark + wordmark (fort/merlon icon) — 2026-03-14
+- [x] Fonts: Georgia (serif) + Arial (sans) — system fonts — 2026-03-14
+- [x] tailwind.config.js updated with fort-green, fort-gold, fort-cream, fort-black — 2026-03-14
