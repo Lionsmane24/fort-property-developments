@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_phase: 3 — Page Build
-current_plan: 06 (next plan)
-status: in-progress
-last_updated: "2026-03-14T22:49:00Z"
+current_phase: 4 — Polish and Launch
+current_plan: 01 — SEO Infrastructure
+status: active
+last_updated: "2026-03-14T23:40:00Z"
 progress:
   total_phases: 4
-  completed_phases: 2
-  total_plans: 10
-  completed_plans: 5
+  completed_phases: 3
+  total_plans: 15
+  completed_plans: 7
 ---
 
 # Project State: Fort Property Developments
@@ -22,9 +22,9 @@ _Last updated: 2026-03-14_
 ## Current Status
 
 **Active Milestone:** Milestone 1 — Launch-Ready Website
-**Current Phase:** 3 — Page Build
-**Current Plan:** 06 (next plan)
-**Overall Progress:** [█████████░] 90% — Phase 1 complete, Phase 2 complete, Phase 3 Plans 01–05 complete
+**Current Phase:** 4 — Polish and Launch
+**Current Plan:** 01 — SEO Infrastructure (complete)
+**Overall Progress:** [███████░░░] 73% — Phase 1 complete, Phase 2 complete, Phase 3 complete, Phase 4 Plan 01 complete
 
 ---
 
@@ -43,12 +43,14 @@ _Last updated: 2026-03-14_
 - [x] Phase 3 Plan 03: About page — 7 sections, server component, founder bio, values, Fort Difference, service area, affiliations, CTA
 - [x] Phase 3 Plan 04: Projects page — project card grid, Burnaby Multiplex card, CTA section
 - [x] Phase 3 Plan 05: Contact page — split layout, info block with email/phone, Formspree ContactForm with mailto fallback
+- [x] Phase 3 Plan 06: Human verification — all 4 pages approved at desktop + mobile by Dennis (2026-03-14)
+- [x] Phase 4 Plan 01: SEO Infrastructure — next-sitemap + next-plausible installed, postbuild hook wired, sitemap.xml + robots.txt generated
 
 ---
 
 ## Next Action
 
-Execute Phase 3 Plan 06 (final phase 3 plan, if any) or Phase 4.
+**Phase 4 Plan 02: Privacy page** — ready to begin.
 
 ---
 
@@ -66,6 +68,7 @@ Execute Phase 3 Plan 06 (final phase 3 plan, if any) or Phase 4.
 10. **Inline SVG icons for values:** No icon library added — simple stroke-based inline SVG paths for three value icons keep zero new dependencies. (Phase 3 Plan 03)
 11. **No FadeIn on Contact page:** Form is primary CTA — renders immediately without animation delay. (Phase 3 Plan 05)
 12. **Formspree fallback condition:** Triggers when !ENDPOINT or ENDPOINT === 'xxx' — covers both missing and placeholder states, shows mailto link. (Phase 3 Plan 05)
+13. **next-sitemap generates index + page sitemaps:** sitemap.xml is the index; sitemap-0.xml holds the page URLs — both committed to public/. (Phase 4 Plan 01)
 
 ---
 
@@ -90,6 +93,8 @@ Execute Phase 3 Plan 06 (final phase 3 plan, if any) or Phase 4.
 ## Git Log
 
 ```
+1abefe0 feat(04-01): add next-sitemap config and generate sitemap + robots.txt
+caa5568 chore(04-01): install next-plausible and next-sitemap, add postbuild script
 a0f9366 feat(03-05): build Contact page with split layout and info block
 e6ae8e7 feat(03-05): create ContactForm client component with Formspree integration
 a067b73 feat(03-01): add hero background image to public/images/
@@ -98,6 +103,4 @@ a067b73 feat(03-01): add hero background image to public/images/
 4e8893a feat(02-03): create FadeIn and FadeInGroup animation utilities
 9854d5f feat(02-03): create Footer, Button, and Section server components
 a5b7899 feat(02-02): build full Nav component with sticky scroll shadow and mobile overlay
-ef12ebc feat(02-01): create app files, globals.css, layout.tsx, page.tsx and component stubs
-02e7681 feat(02-01): install Next.js packages and write config files
 ```
