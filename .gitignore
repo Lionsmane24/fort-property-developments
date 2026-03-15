@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Environment variables (never commit secrets)
+.env.local
+.env*.local
+
+# Cache
+cache/
+.cache/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Misc
+chrome-port-map.json
+chrome-profiles/
+profiles/
+update_check.json
+next-env.d.ts
