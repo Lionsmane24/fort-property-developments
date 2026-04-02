@@ -358,7 +358,7 @@ export default function ATHDashboard(){
                     {sensRows.map(r=>{
                       const isBase=r.w===65,isCurrent=Math.abs(r.w-wti)<3;
                       const rowBg=isBase?"#0A2010":isCurrent?"#0A1A28":"transparent";
-                      const c=r.fcf<0?RED:r.w>=90?GREEN:r.w>=70?AMBER:WHITE;
+                      const c=r.f<0?RED:r.w>=90?GREEN:r.w>=70?AMBER:WHITE;
                       return(
                         <tr key={r.w} style={{borderBottom:`1px solid ${BORDER}22`,background:rowBg}}>
                           <td style={{padding:"7px 10px",textAlign:"right",color:isBase?AMBER:isCurrent?CYAN:WHITE,fontWeight:isBase||isCurrent?700:400}}>
