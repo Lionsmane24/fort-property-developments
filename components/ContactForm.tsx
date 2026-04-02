@@ -1,10 +1,19 @@
 'use client'
 import { useForm, ValidationError } from '@formspree/react'
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 const ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm(ENDPOINT ?? '')
+  const router = useRouter()
+
+  useEffect(() => {
+    if (state.succeeded) {
+      router.push('/thank-you')
+    }
+  }, [state.succeeded, router])
 
   // Graceful fallback
   if (!ENDPOINT || ENDPOINT === 'xxx') {
@@ -23,15 +32,6 @@ export default function ContactForm() {
         <p className="font-sans text-fort-gray/60 text-sm mt-2">
           We respond within 1 business day.
         </p>
-      </div>
-    )
-  }
-
-  if (state.succeeded) {
-    return (
-      <div className="py-8 text-center">
-        <p className="font-serif text-2xl text-fort-charcoal">Message received.</p>
-        <p className="font-sans text-fort-gray mt-2">We'll respond within 1 business day.</p>
       </div>
     )
   }
@@ -84,7 +84,7 @@ export default function ContactForm() {
           className="mt-1 w-full px-3 py-2 border border-fort-gray/40 rounded font-sans text-sm text-fort-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-fort-gold"
         >
           <option value="">Select a project</option>
-          <option value="burnaby-multiplex">Burnaby Multiplex (Planning)</option>
+          <option value="fort-langley-multiplex">Fort Langley Multiplex (Development Permit Application)</option>
           <option value="general">General Inquiry</option>
           <option value="land">Land / Site Opportunity</option>
         </select>

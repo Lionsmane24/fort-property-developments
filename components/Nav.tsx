@@ -8,8 +8,11 @@ import Link from 'next/link'
 const navLinks = [
   { label: 'Home', href: '/', mobileOnly: true },
   { label: 'Projects', href: '/projects', mobileOnly: false },
-  { label: 'About', href: '/about', mobileOnly: false },
-  { label: 'Contact', href: '/contact', mobileOnly: false },
+  { label: 'Partnerships', href: '/learn', mobileOnly: false },
+  { label: 'Feasibility Calculator', href: '/askmultiplex/app', mobileOnly: false },
+  { label: 'Blog', href: '/blog', mobileOnly: false },
+  { label: 'About', href: '/about', mobileOnly: true },
+  { label: 'Contact', href: '/contact', mobileOnly: true },
 ]
 
 export default function Nav() {
@@ -49,8 +52,8 @@ export default function Nav() {
               <Image
                 src="/logo/fort-logo-reversed.svg"
                 alt="Fort Property Developments"
-                width={160}
-                height={40}
+                width={200}
+                height={52}
                 priority
               />
             </Link>
@@ -69,10 +72,12 @@ export default function Nav() {
                   </Link>
                 ))}
               <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-5 py-2 rounded bg-fort-gold text-white font-sans text-sm font-semibold hover:bg-amber-600 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-fort-gold focus-visible:ring-offset-2 focus-visible:ring-offset-fort-charcoal"
+                href="https://link.fortpropertydevelopments.com/book-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-5 py-2 rounded bg-fort-gold text-white font-sans text-sm font-semibold hover:bg-[#b89540] transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-fort-gold focus-visible:ring-offset-2 focus-visible:ring-offset-fort-charcoal"
               >
-                Register Interest
+                Ask Dennis
               </a>
             </nav>
 
@@ -124,11 +129,11 @@ export default function Nav() {
               </Link>
             ))}
             <a
-              href="/contact"
-              className="mt-4 inline-flex items-center justify-center px-8 py-3 rounded bg-fort-gold text-white font-sans text-base font-semibold hover:bg-amber-600 transition-colors duration-200"
+              href="https://link.fortpropertydevelopments.com/book-call"
+              className="mt-4 inline-flex items-center justify-center px-8 py-3 rounded bg-fort-gold text-white font-sans text-base font-semibold hover:bg-[#b89540] transition-colors duration-200"
               onClick={() => setMenuOpen(false)}
             >
-              Register Interest
+              Ask Dennis
             </a>
           </nav>
         </div>

@@ -11,10 +11,10 @@ module.exports = {
         serif: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
       colors: {
-        // Fort Property Developments Brand Palette
-        'fort-charcoal': '#1A1A2E',   // Primary dark — nav, logo, headings, footer
-        'fort-blue':     '#1B3A6B',   // Deep blue — section backgrounds, accents
-        'fort-gold':     '#C4973A',   // Gold — CTAs, highlights, eyebrows, dividers
+        // Fort Property Developments Brand Palette (matched to Zoom backdrop)
+        'fort-charcoal': '#1B2A44',   // Deep navy — nav, headings, footer, hero
+        'fort-blue':     '#162236',   // Darker navy — contrast sections
+        'fort-gold':     '#C9A84C',   // Warm gold — CTAs, highlights, brackets, dividers
         'fort-bg':       '#F8F6F1',   // Off-white — page background, card backgrounds
         'fort-gray':     '#374151',   // Body text
       },

@@ -30,3 +30,12 @@ chrome-profiles/
 profiles/
 update_check.json
 next-env.d.ts
+
+# Generated files
+*.pdf
+*.pptx
+*.docx
+__pycache__/
+*.py
+tsconfig.tsbuildinfo
+.claude/

@@ -15,11 +15,11 @@
   <!-- PROPERTY DEVELOPMENTS — gold, same on dark -->
   <text
     x="4"
-    y="96"
+    y="98"
     font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-size="11"
+    font-size="22"
     font-weight="600"
-    letter-spacing="6"
-    fill="#C4973A"
+    letter-spacing="3"
+    fill="#C9A84C"
   >PROPERTY DEVELOPMENTS</text>
 </svg>

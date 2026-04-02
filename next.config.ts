@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   images: {
     // Add external image domains here when needed (Phase 3/4)
   },
+  serverExternalPackages: ['@21st-sdk/node'],
 }
 
 export default nextConfig

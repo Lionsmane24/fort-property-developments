@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.FortPropertyDevelopments.com/about</loc><lastmod>2026-03-14T23:47:30.122Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.FortPropertyDevelopments.com/contact</loc><lastmod>2026-03-14T23:47:30.122Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.FortPropertyDevelopments.com/icon.svg</loc><lastmod>2026-03-14T23:47:30.122Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.FortPropertyDevelopments.com</loc><lastmod>2026-03-14T23:47:30.122Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.FortPropertyDevelopments.com/privacy</loc><lastmod>2026-03-14T23:47:30.122Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.FortPropertyDevelopments.com/projects</loc><lastmod>2026-03-14T23:47:30.122Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/about</loc><lastmod>2026-03-23T02:06:59.485Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/askmultiplex/app/new</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/askmultiplex/app</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/askmultiplex/app/results</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/askmultiplex</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/blog/bc-bill-44-what-it-means-for-your-lot</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/blog/is-your-lot-eligible-for-a-multiplex</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/blog/multiplex-roi-what-returns-can-you-expect</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/blog</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/chat</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/contact</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/icon.svg</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/learn</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/privacy</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/projects</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/terms</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/thank-you</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.FortPropertyDevelopments.com/zoning-guide</loc><lastmod>2026-03-23T02:06:59.486Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
