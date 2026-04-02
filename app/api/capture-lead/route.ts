@@ -42,7 +42,33 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'GHL submission failed', detail: data }, { status: 502 })
     }
 
-    return NextResponse.json({ success: true, contactId: data.contact?.id })
+    const contactId = data.contact?.id
+
+    // Add a note for zoning guide downloads so Dennis can follow up
+    if (contactId && source === 'Zoning Guide') {
+      try {
+        await fetch(`${GHL_CONTACTS_URL}${contactId}/notes`, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${GHL_API_TOKEN}`,
+            'Version': '2021-07-28',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            body: [
+              '📄 Downloaded: BC Multiplex Zoning Guide',
+              `Date: ${new Date().toISOString().split('T')[0]}`,
+              `Email: ${email}`,
+              '',
+              'This lead downloaded the free zoning guide from the website.',
+              'Recommended follow-up: 15-min call to discuss their lot.',
+            ].join('\n'),
+          }),
+        })
+      } catch { /* non-blocking */ }
+    }
+
+    return NextResponse.json({ success: true, contactId })
   } catch (err) {
     console.error('capture-lead error:', err)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
