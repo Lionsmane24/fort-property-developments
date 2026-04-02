@@ -1,7 +1,7 @@
 'use client'
 
 // GHL: Update this URL to your GoHighLevel booking/funnel page
-const GHL_BOOKING_URL = 'https://link.fortpropertydevelopments.com/book-call'
+const GHL_BOOKING_URL = 'https://api.leadconnectorhq.com/widget/booking/0Yp28PYUWW2jnkHDddK8'
 
 export default function FloatingCTA() {
   return (

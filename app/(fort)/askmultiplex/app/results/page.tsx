@@ -5,7 +5,7 @@ import Link from 'next/link'
 import jsPDF from 'jspdf'
 import QRCode from 'qrcode'
 
-const GHL_BOOKING_URL = 'https://link.fortpropertydevelopments.com/book-call'
+const GHL_BOOKING_URL = 'https://api.leadconnectorhq.com/widget/booking/0Yp28PYUWW2jnkHDddK8'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 

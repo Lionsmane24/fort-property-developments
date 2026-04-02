@@ -150,7 +150,7 @@ export default function PartnershipsPage() {
           </p>
           <div className="flex gap-4 mt-10 justify-center flex-wrap">
             <Button href="/contact">Get in Touch</Button>
-            <Button href="https://link.fortpropertydevelopments.com/book-call" variant="secondary">Talk to Dennis</Button>
+            <Button href="https://api.leadconnectorhq.com/widget/booking/0Yp28PYUWW2jnkHDddK8" variant="secondary">Talk to Dennis</Button>
           </div>
         </div>
       </section>

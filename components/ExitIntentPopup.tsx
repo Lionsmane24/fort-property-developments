@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-const GHL_BOOKING_URL = 'https://link.fortpropertydevelopments.com/book-call'
+const GHL_BOOKING_URL = 'https://api.leadconnectorhq.com/widget/booking/0Yp28PYUWW2jnkHDddK8'
 const STORAGE_KEY = 'fort_exit_popup_dismissed'
 
 export default function ExitIntentPopup() {

@@ -72,7 +72,7 @@ export default function Nav() {
                   </Link>
                 ))}
               <a
-                href="https://link.fortpropertydevelopments.com/book-call"
+                href="https://api.leadconnectorhq.com/widget/booking/0Yp28PYUWW2jnkHDddK8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-2 rounded bg-fort-gold text-white font-sans text-sm font-semibold hover:bg-[#b89540] transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-fort-gold focus-visible:ring-offset-2 focus-visible:ring-offset-fort-charcoal"
@@ -129,7 +129,7 @@ export default function Nav() {
               </Link>
             ))}
             <a
-              href="https://link.fortpropertydevelopments.com/book-call"
+              href="https://api.leadconnectorhq.com/widget/booking/0Yp28PYUWW2jnkHDddK8"
               className="mt-4 inline-flex items-center justify-center px-8 py-3 rounded bg-fort-gold text-white font-sans text-base font-semibold hover:bg-[#b89540] transition-colors duration-200"
               onClick={() => setMenuOpen(false)}
             >

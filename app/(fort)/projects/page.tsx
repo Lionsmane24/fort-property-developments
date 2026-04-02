@@ -162,7 +162,7 @@ export default function ProjectsPage() {
                 </p>
                 <div className="flex gap-3 mt-8 flex-wrap">
                   <Button href="/askmultiplex/app">Try the Calculator</Button>
-                  <Button href="https://link.fortpropertydevelopments.com/book-call" variant="secondary">Talk to Dennis</Button>
+                  <Button href="https://api.leadconnectorhq.com/widget/booking/0Yp28PYUWW2jnkHDddK8" variant="secondary">Talk to Dennis</Button>
                 </div>
               </div>
               <div className="bg-white rounded-xl border border-fort-charcoal/5 p-8 text-center">
