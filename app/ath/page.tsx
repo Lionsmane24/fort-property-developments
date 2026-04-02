@@ -498,7 +498,7 @@ export default function ATHDashboard(){
                     <CartesianGrid strokeDasharray="3 3" stroke={BORDER}/>
                     <XAxis dataKey="yr" tick={{fill:"#607080",fontSize:9,fontFamily:MONO}}/>
                     <YAxis tickFormatter={(v:number)=>`${(v/1000).toFixed(0)}k`} tick={{fill:"#607080",fontSize:9,fontFamily:MONO}}/>
-                    <Tooltip contentStyle={{background:CARD,border:`1px solid ${BORDER}`,fontFamily:MONO,fontSize:10}} formatter={(v:number)=>[`${v.toLocaleString()} boe/d`]}/>
+                    <Tooltip contentStyle={{background:CARD,border:`1px solid ${BORDER}`,fontFamily:MONO,fontSize:10}} formatter={(v)=>[`${Number(v).toLocaleString()} boe/d`]}/>
                     <Bar dataKey="Leismer" stackId="a" fill={CYAN} name="Leismer"/>
                     <Bar dataKey="Hang" stackId="a" fill="#405080" name="Hangingstone"/>
                     <Bar dataKey="Corner" stackId="a" fill={GREEN} name="Corner Ph1"/>
